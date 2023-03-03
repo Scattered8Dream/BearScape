@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<header>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</header>
+<head>
+    <title>Matrícula Aluno</title>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="Nome">Nome: </label>
+        <input type="text" id="user" name="Nome" placeholder="Nome">
+        <br>
+        <br>
+        <label for="Nome">CPF: </label>
+        <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX">
+        <br>
+        <br>
+        <label for="Nome">Sexo: </label>
+        <input type="text" id="user" name="Nome" placeholder="Nome">
+        <br>
+        <br>
+
+        <p>Sexo: </p>
+        <input type="radio" id="sexo" name="Masc" value="Masculino">
+        <label for="sexo">Masculino</label><br>
+        <input type="radio" id="sexo" name="Fem" value="Feminino">
+        <label for="sexo">Feminino</label><br>
+        <br>
+        <div id="div_city">
+            <label for="city">Cidade: </label>
+            <input type="text" id="city" name="Cidade" placeholder="Cidade">
+        </div>
+        <br>
+        <br>
+
+        <label for="states">Estados: </label>
+        <select name="states" id="states">
+            <optgroup label="Sudeste">
+                <option value="Sao Paulo">SP</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Espirito Santo">ES</option>
+                <option value="Minas Gerais">MG</option>
+            </optgroup>
+            <optgroup label="Centro-Oeste">
+                <option value="Distrito Federal">DF</option>
+                <option value="Goias">GO</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Mato Grosso do Sul">MS</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <br>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados da Matrícula</legend>
+        <div>
+            <legend>Escolha seu curso:</legend>
+            <input type="checkbox" id="ads" name="ads" checked>
+            <label for="ads">Análise e desenvolvimento de Sistemas</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="eng" name="eng">
+            <label for="ads">Engenharia mecânica</label>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="mat" name="mat">
+            <label for="ads">Licenciatura em matemática</label>
+          </div>
+    <br>
+    <br>
+
+          <label for="opt1">Matérias optativas</label> 
+    <div>
+        <input type="checkbox" id="opt1" name="opt1">
+        <label for="opt1">Programação de robos</label>
+        <input type="checkbox" id="opt2" name="opt2">
+        <label for="ads">Desenvolvimento de IA</label>
+    </div>
+    <div>
+        <input type="checkbox" id="opt3" name="opt3">
+        <label for="ads">Modelagem computacional</label>
+        <input type="checkbox" id="opt4" name="opt4">
+        <label for="ads">Desenvolvimento em Docker</label>
+    </div>
+    <br>
+    <br>
+    
+        <label for="sugestion">Sugestão de disciplinas futuras:</label><br>
+        <textarea id="sugestion" name="sugestion" rows="4" cols="50"></textarea>
+    </fieldset>
+    <br>
+    <br>
+
+    <div align="center">
+        <button>Enviar</button>
+    </div>
+</body>
+</html>
